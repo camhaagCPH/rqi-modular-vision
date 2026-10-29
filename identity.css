@@ -816,3 +816,16 @@ a:focus-visible, button:focus-visible { outline: 2px solid #3682bd; outline-offs
 @media (min-width: 901px) and (max-width: 1180px) { .dscene .stick { grid-template-columns: minmax(250px, 0.62fr) 1.38fr; gap: 20px; } .dscene h2 { font-size: clamp(28px, 3.9vw, 40px); } }
 @media (min-width: 901px) and (max-width: 1180px) { :root { --scene-cols: minmax(250px, 0.64fr) 1.36fr; --scene-gap: 22px; } .pname { font-size: clamp(36px, 4.6vw, 52px); } }
 @media (min-width: 901px) and (max-width: 1180px) { .gstat { gap: 22px; } .gstat small { white-space: nowrap; font-size: 11px; letter-spacing: 0.08em; } }
+
+/* spacing between the intro and the first example, and inside each example */
+.pfour .lead { max-width: 32em; }
+.pfour .lead2 { margin: 16px 0 0; font-size: clamp(17px, 1.3vw, 19px); color: #86868b; text-align: left; }
+.pfour:has(+ .pex) { padding-bottom: clamp(72px, 8vw, 110px); }
+.pex { padding-top: 0; }
+.pitem .plead { margin-top: 16px; }
+.pitem .pwhen { margin-top: 28px; gap: 18px; }
+.pitem .pwhen > div { padding-top: 14px; }
+.pitem .pwhen > div:nth-child(3) { margin-top: 6px; padding: 16px 18px 18px; }
+.pitem .pwhen dd { margin-top: 6px; line-height: 1.4; }
+.pitem .pgroup { margin-bottom: 4px; }
+.pfour .lead, .pfour .lead2 { max-width: 760px; }
